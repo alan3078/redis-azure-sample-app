@@ -19,7 +19,6 @@ async function testCache() {
     cacheConnection.on('error', (err) => console.log('Redis Client Error', err));
 
     await cacheConnection.connect()
-    await cacheConnection.ping
     
     // Simple PING command
     console.log("\nCache command: PING");
